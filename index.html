@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Elite Editor | Data & Document Specialists</title>
+    <title>The Elite Editor | Professional Data Solutions</title>
     <style>
         :root { --gold: #d4af37; --dark: #0a0a0a; --gray: #1a1a1a; --text: #e0e0e0; }
         body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--dark); color: var(--text); scroll-behavior: smooth; line-height: 1.7; }
@@ -18,21 +18,35 @@
         .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
         .feature-card { background: var(--gray); padding: 30px; border-radius: 15px; border: 1px solid #333; text-align: center; }
         .feature-card h3 { color: var(--gold); }
-        .cta-btn { display: inline-block; background: var(--gold); color: #000; padding: 18px 45px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 40px; }
+        .cta-btn { display: inline-block; background: var(--gold); color: #000; padding: 18px 45px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 40px; transition: 0.3s; }
+        .cta-btn:hover { background: #fff; transform: scale(1.05); }
+
+        /* WhatsApp Floating Button Style */
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; transition: 0.3s; }
+        .whatsapp-float:hover { background-color: #128c7e; transform: scale(1.1); }
+
         footer { text-align: center; padding: 60px; background: #000; color: #666; border-top: 1px solid #333; }
         footer a { color: var(--gold); text-decoration: none; cursor: pointer; margin: 0 10px; }
     </style>
 </head>
 <body>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me" target="_blank" class="whatsapp-float">
+        Chat on WhatsApp
+    </a>
+
     <header>
         <div class="logo">The Elite Editor</div>
         <nav><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
     </header>
+
     <section class="hero">
         <h1>Turning Data into Clarity</h1>
         <p>Your Success is Our Priority. Professional Solutions with 100% Accuracy.</p>
-        <a href="#contact" class="cta-btn">Start Your Project Today</a>
+        <a href="https://wa.me" class="cta-btn">Order on WhatsApp</a>
     </section>
+
     <div class="container">
         <div id="about" class="exp-box">Ayesha | 4+ Years Experience | Data Entry & File Conversion Expert</div>
         <section id="services">
@@ -43,14 +57,18 @@
                 <div class="feature-card"><h3>Security</h3><p>Your sensitive info is protected with secure handling.</p></div>
             </div>
         </section>
+
         <section id="contact" style="text-align: center; padding-top: 80px;">
             <h2>Contact Us</h2>
             <p>Email: <strong>taqeel508@gmail.com</strong> | Phone: <strong>03294562610</strong></p>
-            <p>Pinterest: <a href="https://pin.it" style="color:var(--gold)">Visit Profile</a></p>
+            <!-- Pinterest link ab theek kar diya hai -->
+            <p>Pinterest: <a href="https://pin.it" target="_blank" style="color:var(--gold); font-weight:bold;">Visit My Pinterest Profile</a></p>
         </section>
     </div>
+
     <footer>
         <p>&copy; 2026 The Elite Editor | Turning Data into Clarity.</p>
     </footer>
+
 </body>
 </html>
